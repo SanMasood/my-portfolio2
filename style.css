@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: Cardo;
+    color: rgb(112, 112, 112);
+   /* font-size: 17px;*/
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(203, 247, 250, 0.2), rgba(236, 245, 242, 0.589));
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(11, 177, 155, .3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(200, 218, 209);
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.main-header{
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.about-me{
+    text-align: center;
+    color: rgb(100, 100, 104);
+    margin: 0;
+    font-size: 3em;
+    padding: 20px 0 0 0;
+}
+.content-section{
+    margin: 1em;
+    font-size: 18px;
+}
+.container{
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 1.5em; /*brought article to the center*/
+}
+.section-header{
+    text-align: center;
+    font-size: x-large;
+}
+
+.quote-photo{
+    float: right;
+    margin: 15px;
+    border-radius: 15px;
+}
+.main-footer{
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    color: whitesmoke;
+    padding: 0;
+   
+}
+.main-footer-container{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+    flex-flow: column;
+    
+}
+.main-footer-container ul{
+    flex-grow: 1;
+   /* text-align:*/
+    align-content: space-between;
+
+}
+.footer-nav li{
+   
+    padding: 12px;
+}
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+
+}
+.but{
+    background: #1298aa;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function:linear;
+  }
+  .but:hover {
+    background: #ff76e1;
+  }
+  
