@@ -23,7 +23,7 @@ html,body{
 
 .nav a{
     display: inline-block;
-    padding: 0.5em;
+    padding: .9em;
     color: white;
     text-decoration: none;
 }
@@ -83,9 +83,10 @@ html,body{
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-    grid-auto-rows: minmax(100px, auto);
-    grid-auto-columns: 30%;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(30px, 30%);
+    width: 100%;
 
 }
 
@@ -95,8 +96,7 @@ html,body{
     margin-bottom: 1em;
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
+    
 }
 
 .box > div:nth-child(odd) {
