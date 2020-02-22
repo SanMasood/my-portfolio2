@@ -6,7 +6,7 @@
 }
 
 
-html,body{
+html,body, .container{
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom, rgba(203, 247, 250, 0.2), rgba(236, 245, 242, 0.589));
@@ -87,6 +87,7 @@ html,body{
     grid-auto-rows: minmax(50px, auto);
     grid-auto-columns: minmax(30px, 30%);
     width: 100%;
+    padding: inherit; /*will inherit padding from parent*/
 
 }
 
