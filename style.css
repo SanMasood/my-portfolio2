@@ -10,8 +10,9 @@ html,body{
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom, rgba(203, 247, 250, 0.2), rgba(236, 245, 242, 0.589));
+    width: 100%;
+    
 }
-
 .nav ul{
     margin: 0;
 }
