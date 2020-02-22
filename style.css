@@ -60,7 +60,7 @@ html,body{
     font-size: 18px;
 }
 .container{
-    max-width: 900px; 
+    max-width: 70%; 
     margin: 0 auto;
     padding: 0 1.5em; /*brought article to the center*/
 }
@@ -73,7 +73,69 @@ html,body{
     float: right;
     margin: 15px;
     border-radius: 15px;
+    width: 65px;
+    width: 65%;/*NOT 100% IT SHOULD BE*/ 
+    height: 15%;
 }
+
+.box{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: 30%;
+
+}
+
+.box > div{
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.box > div:nth-child(odd) {
+    background: rgb(255, 255, 255);
+    font-family: 'Dancing Script';
+    font-size: 120%;
+    text-align: justify;
+
+}
+.box1{
+    width: 40%;
+ /* justify-items: center;*/
+    justify-self: end;
+    font-family: 'EB Garamond';
+    }
+
+.box2{
+    text-align: justify;
+
+}
+
+.box3{
+
+    width: 40%;
+    max-width: 40%;
+    }
+
+.box-heading{
+    font-family: Cardo, monospace;
+    font-size: 19px;
+    font-style: normal;
+    text-align: center;
+    margin-top: .3em;
+}
+hr{
+    max-width: 70%;
+    border: 1px dashed rgb(177, 222, 243);
+    margin-bottom: 2em;    
+}
+
 .main-footer{
     background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     color: whitesmoke;
