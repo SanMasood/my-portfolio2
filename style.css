@@ -51,7 +51,7 @@ html,body, .container{
 
 .about-me{
     text-align: center;
-    color: rgb(100, 100, 104);
+    color: rgb(100, 100, 104); /*rgba(130, 248, 189, 0.226);*/
     margin: 0;
     font-size: 3em;
     padding: 20px 0 0 0;
