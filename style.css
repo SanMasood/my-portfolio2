@@ -47,6 +47,7 @@ html,body, .container{
     background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     padding-bottom: 30px;
+    width:100%;
 }
 
 .about-me{
@@ -74,24 +75,24 @@ html,body, .container{
     float: right;
     margin: 15px;
     border-radius: 15px;
-    width: 65px;
+   /* width: 65px;*/
     width: 65%;/*NOT 100% IT SHOULD BE*/ 
     height: 15%;
 }
 
-.box{
+.aboutbox{
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5em;
     grid-auto-rows: minmax(50px, auto);
-    grid-auto-columns: minmax(30px, 30%);
-    width: 100%;
+    grid-auto-columns: minmax(40px, 40%);
+    width: 800px;
     padding: inherit; /*will inherit padding from parent*/
-
+margin: auto;
 }
 
-.box > div{
+.aboutbox > div{
     background: #eee;
     padding: 1em;
     margin-bottom: 1em;
@@ -101,29 +102,31 @@ html,body, .container{
     
 }
 
-.box > div:nth-child(odd) {
+.aboutbox > div:nth-child(odd) {
     background: rgb(255, 255, 255);
     font-family: 'Dancing Script';
     font-size: 120%;
     text-align: justify;
 
 }
-.box1{
-    width: 40%;
+.aboutbox1{
+  /*  width: 40%;*/
  /* justify-items: center;*/
     justify-self: end;
     font-family: 'EB Garamond';
     }
 
-.box2{
+.aboutbox2 {
     text-align: justify;
 
 }
 
-.box3{
+.aboutbox3{
+  /*  width: 40%;*/
 
-    width: 40%;
-    max-width: 40%;
+    justify-self: start;
+    
+   
     }
 
 .box-heading{
@@ -178,3 +181,19 @@ hr{
     background: #ff76e1;
   }
   
+  @media screen and (max-width: 900px){
+      .aboutbox{
+          display: block;
+            width: 90%;
+            justify-content: center;
+
+        }
+        .aboutbox1 .aboutbox3{
+            width: 90%;
+
+        }
+        .quote-photo{
+            width: 100%;
+        }
+    
+  }
